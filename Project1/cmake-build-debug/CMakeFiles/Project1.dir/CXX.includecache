@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Elvin's Laptop/Desktop/GitHub/GitHub_Repositories/C-Projects/Project1/Project1.cpp
+C:/Users/Elvin's Laptop/Desktop/GitHub/GitHub_Repositories/CC++-Projects/Project1/Project1.cpp
 stdio.h
 -
 stdint.h
 -
 ctype.h
 -
+string.h
+-
 
-C:/Users/Elvin's Laptop/Desktop/GitHub/GitHub_Repositories/C-Projects/Project1/main.cpp
+C:/Users/Elvin's Laptop/Desktop/GitHub/GitHub_Repositories/CC++-Projects/Project1/main.cpp
 stdio.h
 -
 stdint.h

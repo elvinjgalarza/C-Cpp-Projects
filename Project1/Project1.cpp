@@ -9,6 +9,8 @@
 #include <stdio.h> // provides declarations for printf and putchar
 #include <stdint.h> // provides declarations for int32_t uint32_t and the other (new) standard C types
 #include <ctype.h> // provides the ability to use the tolower function
+#include <string.h> //provides the ability to use strncomp function
+
 /* All of your code must be in this file. Please no #includes other than standard system headers (ie.., stdio.h, stdint.h)
  *
  * Many students find it helpful to declare global variables (often arrays). You are welcome to use
@@ -27,10 +29,31 @@
  */
 
 
-void compareDict();
+void compareDict(char dictionary[], char word[]){
+    int i = 0;
+    int count = 0;
+    int compare = 1;
+    while(dictionary[i] != 0) {                          //if we haven't reached the end of the dictionary
+        /** printf("%c", dictionary[i]); **/ // debugging purposes
+        i++;
+        count++;
+        if (dictionary[i] == '\n') {
+            compare = strncmp(word, dictionary, count);
+            count = 0;
+        }
+        if(compare == 0){                                //we have found a match.. try new article word
+            return;
+        }
+        if (dictionary[i] == 0 && compare != 0) {       //we found a mistake! print it
+            printf("%s\n", word);
+            count = 0;
+        }
+    }
+
+}
 
 
-void constrWord(char article[], int word_size, int a){
+void constrWord(char dictionary[], char article[], int word_size, int a){
     char word[100];
     int char_loc = 0;
     int w = 0;
@@ -49,9 +72,9 @@ void constrWord(char article[], int word_size, int a){
         if(word_size == 0){         //if we've completed the word
             word[w] = 0;            // this allows for the string to be ended!
 
-            printf("original: %s\n", word);  // this is just for debugging purposes
+            // printf("original: %s\n", word);  // this is just for debugging purposes
 
-            compareDict();
+            compareDict(dictionary, word);
 
             char_loc = 0;           // this allows us to escape the while loop
 
@@ -79,7 +102,7 @@ void spellCheck(char article[], char dictionary[]) {
         }
         if(letter_flag == 0 && word_size >= 2){ // if there isn't another letter to be checked,
                                                 // and we have the def. of a word, compare it!
-            constrWord(article, word_size, a);
+            constrWord(dictionary,article, word_size, a);
             word_size = 0;                      // reset word_size after sending it to compareDict, since we're starting over
         }
         else{
