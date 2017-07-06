@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Elvin's Laptop/Desktop/EE 312 LABS/Project1/Project1.cpp
+C:/Users/Elvin's Laptop/Desktop/GitHub/GitHub_Repositories/C-Projects/Project1/Project1.cpp
 stdio.h
 -
 stdint.h
 -
+ctype.h
+-
 
-C:/Users/Elvin's Laptop/Desktop/EE 312 LABS/Project1/main.cpp
+C:/Users/Elvin's Laptop/Desktop/GitHub/GitHub_Repositories/C-Projects/Project1/main.cpp
 stdio.h
 -
 stdint.h

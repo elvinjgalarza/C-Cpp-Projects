@@ -8,7 +8,7 @@
 
 #include <stdio.h> // provides declarations for printf and putchar
 #include <stdint.h> // provides declarations for int32_t uint32_t and the other (new) standard C types
-
+#include <ctype.h> // provides the ability to use the tolower function
 /* All of your code must be in this file. Please no #includes other than standard system headers (ie.., stdio.h, stdint.h)
  *
  * Many students find it helpful to declare global variables (often arrays). You are welcome to use
@@ -27,25 +27,34 @@
  */
 
 
+void compareDict();
 
-char constrWord(char article[], int word_size, int a){
-    char word[20];
+
+void constrWord(char article[], int word_size, int a){
+    char word[100];
     int char_loc = 0;
     int w = 0;
-
     char_loc = a - word_size;                   //gives us starting location of the array's word
+
     while(char_loc != 0) {
-       /** printf("%c", article[char_loc]); **/ // this was just for debugging purposes
+
+       /** printf("%c", article[char_loc]); **/ // this is just for debugging purposes
 
         word[w] = article[char_loc];
+        word[w] = tolower(word[w]); //this makes the word all lowercase, so that when we're in compareDict it is easier
         w++;                        //increment the word[w] location to construct the word
         word_size--;                // word_size is our flag now
         char_loc++;                 // increment the location to print next char
 
         if(word_size == 0){         //if we've completed the word
             word[w] = 0;            // this allows for the string to be ended!
-            printf("%s\n", word);
+
+            printf("original: %s\n", word);  // this is just for debugging purposes
+
+            compareDict();
+
             char_loc = 0;           // this allows us to escape the while loop
+
         }
     }
 }
