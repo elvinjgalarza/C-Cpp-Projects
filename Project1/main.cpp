@@ -37,7 +37,7 @@ void readFile(const char file_name[], char buffer[]) {
 
 void fruityTest(void) {
 	printf("\n\n******* Starting Base Test #1 (fruity) *******\n");
-	char dictionary[] = "apple\nbanana\norange\npear\n";
+	char dictionary[] = "apple\nbanana\norange\npear";
 	char article[] = "I ate an apple and a pear\n";
 	spellCheck(article, dictionary); // should print: ate, an, and 
 	printf("****DONE****\n");

@@ -40,8 +40,8 @@ void compareDict(char dictionary[], char word[]){
         i++;
         count++;
         dictword[count] = dictionary[i];
-        if (dictionary[i] == '\n') {
-            dictword[count+1] = 0;
+        if (dictionary[i] == '\n' || dictionary[i] == 0) {
+            dictword[count] = 0;
             compare = strcasecmp(word, dictword);
             count = -1;
         }
@@ -50,7 +50,7 @@ void compareDict(char dictionary[], char word[]){
             return;
         }
         if (dictionary[i] == 0 && compare != 0) {       //we found a mistake! print it
-            printf("%s", word);
+            printf("%s\n", word);
             count = 0;
         }
     }
@@ -69,14 +69,13 @@ void constrWord(char dictionary[], char article[], int word_size, int a){
        /** printf("%c", article[char_loc]); **/ // this is just for debugging purposes
 
         word[w] = article[char_loc];
-        word[w] = tolower(word[w]); //this makes the word all lowercase, so that when we're in compareDict it is easier
+       // word[w] = tolower(word[w]); //this makes the word all lowercase, so that when we're in compareDict it is easier.... TURNS OUT TO BE UNNECESSARY LOL
         w++;                        //increment the word[w] location to construct the word
         word_size--;                // word_size is our flag now
         char_loc++;                 // increment the location to print next char
 
         if(word_size == 0){         //if we've completed the word
-            word[w] = '\n';            // this allows for the string to be ended!
-            word[w+1] = 0;
+            word[w] = 0;
             // printf("original: %s\n", word);  // this is just for debugging purposes
 
             compareDict(dictionary, word);
@@ -98,7 +97,8 @@ void spellCheck(char article[], char dictionary[]) {
     **/
     while (article[a] != 0) {                           // as long as we haven't reached the end of the article[] array we keep searching
         if ((article[a] >= 'a' && article[a] <= 'z') ||
-            (article[a] >= 'A' && article[a] <= 'Z')) { //and if the %c is a letter
+            (article[a] >= 'A' && article[a] <= 'Z')
+                ) {                  //and if the %c is a letter or '
             word_size++;                                // we increment the word_size
             letter_flag = 1;
         }
