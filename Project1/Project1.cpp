@@ -9,7 +9,7 @@
 #include <stdio.h> // provides declarations for printf and putchar
 #include <stdint.h> // provides declarations for int32_t uint32_t and the other (new) standard C types
 #include <ctype.h> // provides the ability to use the tolower function
-#include <string.h> //provides the ability to use strncomp function
+#include <string.h> //provides the ability to use strcasecomp function
 
 /* All of your code must be in this file. Please no #includes other than standard system headers (ie.., stdio.h, stdint.h)
  *
@@ -33,19 +33,24 @@ void compareDict(char dictionary[], char word[]){
     int i = 0;
     int count = 0;
     int compare = 1;
-    while(dictionary[i] != 0) {                          //if we haven't reached the end of the dictionary
-        /** printf("%c", dictionary[i]); **/ // debugging purposes
+    char dictword[100];
+    dictword[count] = dictionary[i];
+    while(dictionary[i] != 0) {                           //if we haven't reached the end of the dictionary
+        // printf("dictword[i] is: %c and location of [i] is: %d\n", dictword[i], i); // debugging purposes
         i++;
         count++;
+        dictword[count] = dictionary[i];
         if (dictionary[i] == '\n') {
-            compare = strncmp(word, dictionary, count);
-            count = 0;
+            dictword[count+1] = 0;
+            compare = strcasecmp(word, dictword);
+            count = -1;
         }
         if(compare == 0){                                //we have found a match.. try new article word
+
             return;
         }
         if (dictionary[i] == 0 && compare != 0) {       //we found a mistake! print it
-            printf("%s\n", word);
+            printf("%s", word);
             count = 0;
         }
     }
@@ -70,8 +75,8 @@ void constrWord(char dictionary[], char article[], int word_size, int a){
         char_loc++;                 // increment the location to print next char
 
         if(word_size == 0){         //if we've completed the word
-            word[w] = 0;            // this allows for the string to be ended!
-
+            word[w] = '\n';            // this allows for the string to be ended!
+            word[w+1] = 0;
             // printf("original: %s\n", word);  // this is just for debugging purposes
 
             compareDict(dictionary, word);
@@ -100,13 +105,13 @@ void spellCheck(char article[], char dictionary[]) {
         else {
             letter_flag = 0;
         }
-        if(letter_flag == 0 && word_size >= 2){ // if there isn't another letter to be checked,
+        if((letter_flag == 0 && word_size >= 2)){ // if there isn't another letter to be checked,
                                                 // and we have the def. of a word, compare it!
             constrWord(dictionary,article, word_size, a);
             word_size = 0;                      // reset word_size after sending it to compareDict, since we're starting over
         }
         else{
-            if(letter_flag == 0 && word_size << 2){ //this allows us to go back to the while letter checking statement
+            if(letter_flag == 0 && word_size < 2){ //this allows us to go back to the while letter checking statement
                 word_size = 0;                      //but we reset, since we ended our current phase and are NOW looking for a different word
             }
             a++; // increment the "pointer"
