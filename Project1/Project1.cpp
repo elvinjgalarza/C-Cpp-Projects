@@ -117,4 +117,10 @@ void spellCheck(char article[], char dictionary[]) {
             a++; // increment the "pointer"
         }
     }
+    if((letter_flag == 1 && word_size >= 2)){                   // if the article[] didn't end with \n and instead ended with 0,
+                                                                // the letter_flag would get stuck at 1
+                                                                // this was just quick code to prevent that
+        constrWord(dictionary,article, word_size, a);
+        word_size = 0;                      // reset word_size after sending it to compareDict, since we're starting over
+    }
 }
