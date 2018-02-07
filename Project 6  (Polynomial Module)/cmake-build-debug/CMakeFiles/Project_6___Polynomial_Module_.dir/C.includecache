@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 6  (Polynomial Module)/Poly.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+stdbool.h
+-
+Poly.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 6  (Polynomial Module)/Poly.h
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 6  (Polynomial Module)/Poly.h
+stdbool.h
+-
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 6  (Polynomial Module)/Proj6Test.c
+stdio.h
+-
+string.h
+-
+Poly.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 6  (Polynomial Module)/Poly.h
+
