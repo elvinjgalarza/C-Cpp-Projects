@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 8 (C++ Warmup)/Proj8TestCases.cpp
+iostream
+-
+iomanip
+-
+sstream
+-
+vector
+-
+string
+-
+StringPlusPlus.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 8 (C++ Warmup)/StringPlusPlus.h
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 8 (C++ Warmup)/StringPlusPlus.cpp
+iostream
+-
+iomanip
+-
+sstream
+-
+vector
+-
+string
+-
+StringPlusPlus.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 8 (C++ Warmup)/StringPlusPlus.h
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 8 (C++ Warmup)/StringPlusPlus.h
+string
+-
+vector
+-
+
