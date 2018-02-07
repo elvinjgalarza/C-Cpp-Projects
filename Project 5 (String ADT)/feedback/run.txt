@@ -1,0 +1,176 @@
+Note: Google Test filter = BasicTests.makeString
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicTests
+[ RUN      ] BasicTests.makeString
+[       OK ] BasicTests.makeString (0 ms)
+[----------] 1 test from BasicTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+
+Note: Google Test filter = BasicTests.utStrdup
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicTests
+[ RUN      ] BasicTests.utStrdup
+[       OK ] BasicTests.utStrdup (0 ms)
+[----------] 1 test from BasicTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+
+Note: Google Test filter = BasicTests.utStrlen
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicTests
+[ RUN      ] BasicTests.utStrlen
+[       OK ] BasicTests.utStrlen (0 ms)
+[----------] 1 test from BasicTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+
+Note: Google Test filter = BasicTests.utStrcpy_short_to_long
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicTests
+[ RUN      ] BasicTests.utStrcpy_short_to_long
+./src/String_test_provided.cc:66: Failure
+      Expected: ans
+      Which is: "shortboi"
+To be equal to: dst->data
+      Which is: "sho   "
+[  FAILED  ] BasicTests.utStrcpy_short_to_long (0 ms)
+[----------] 1 test from BasicTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] BasicTests.utStrcpy_short_to_long
+
+ 1 FAILED TEST
+Note: Google Test filter = BasicTests.utStrcpy_long_to_short
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicTests
+[ RUN      ] BasicTests.utStrcpy_long_to_short
+./src/String_test_provided.cc:86: Failure
+      Expected: ret
+      Which is: 0x8
+To be equal to: dst
+      Which is: 0x55590c593cd0
+[  FAILED  ] BasicTests.utStrcpy_long_to_short (0 ms)
+[----------] 1 test from BasicTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] BasicTests.utStrcpy_long_to_short
+
+ 1 FAILED TEST
+Note: Google Test filter = BasicTests.utStrcat_fit
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicTests
+[ RUN      ] BasicTests.utStrcat_fit
+[       OK ] BasicTests.utStrcat_fit (0 ms)
+[----------] 1 test from BasicTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+
+Note: Google Test filter = BasicTests.utStrcat_no_fit
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicTests
+[ RUN      ] BasicTests.utStrcat_no_fit
+[       OK ] BasicTests.utStrcat_no_fit (0 ms)
+[----------] 1 test from BasicTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+
+Note: Google Test filter = BasicTests.utStrrealloc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicTests
+[ RUN      ] BasicTests.utStrrealloc
+[       OK ] BasicTests.utStrrealloc (0 ms)
+[----------] 1 test from BasicTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+
+Note: Google Test filter = StringTests.test1
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StringTests
+[ RUN      ] StringTests.test1
+[       OK ] StringTests.test1 (0 ms)
+[----------] 1 test from StringTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+
+Note: Google Test filter = StringTests.test2
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StringTests
+[ RUN      ] StringTests.test2
+[       OK ] StringTests.test2 (0 ms)
+[----------] 1 test from StringTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+
+Note: Google Test filter = StringTests.test3
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StringTests
+[ RUN      ] StringTests.test3
+[       OK ] StringTests.test3 (1 ms)
+[----------] 1 test from StringTests (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+
+Note: Google Test filter = StringTests.test4
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StringTests
+[ RUN      ] StringTests.test4
+./src/String_test_provided.cc:237: Failure
+      Expected: 3
+To be equal to: utStrlen(us1)
+      Which is: 9
+[  FAILED  ] StringTests.test4 (0 ms)
+[----------] 1 test from StringTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] StringTests.test4
+
+ 1 FAILED TEST

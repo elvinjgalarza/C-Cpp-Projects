@@ -1,0 +1,20 @@
+Testsuite: BasicTests
+    BasicTests.makeString (success): 5.00/5.00
+    BasicTests.utStrdup (success): 5.00/5.00
+    BasicTests.utStrlen (success): 5.00/5.00
+    BasicTests.utStrcpy_short_to_long (fail): 0.00/5.00
+    BasicTests.utStrcpy_long_to_short (fail): 0.00/5.00
+    BasicTests.utStrcat_fit (success): 5.00/5.00
+    BasicTests.utStrcat_no_fit (success): 5.00/5.00
+    BasicTests.utStrrealloc (success): 5.00/5.00
+    Total: 30.00/40.00
+
+Testsuite: StringTests
+    StringTests.test1 (success): 10.00/10.00
+    StringTests.test2 (success): 10.00/10.00
+    StringTests.test3 (success): 10.00/10.00
+    StringTests.test4 (fail): 0.00/10.00
+    Total: 30.00/40.00
+
+Point total:
+60.00/80.00

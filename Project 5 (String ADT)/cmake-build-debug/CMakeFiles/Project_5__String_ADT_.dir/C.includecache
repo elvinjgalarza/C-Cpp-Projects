@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 5 (String ADT)/Proj5Test.c
+stdio.h
+-
+string.h
+-
+String.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 5 (String ADT)/String.h
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 5 (String ADT)/String.c
+String.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 5 (String ADT)/String.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 5 (String ADT)/String.h
+
