@@ -1,0 +1,58 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Card.cpp
+cstdlib
+-
+time.h
+-
+Card.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Card.h
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Card.h
+ostream
+-
+string
+-
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Deck.cpp
+cstdlib
+-
+time.h
+-
+Deck.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Deck.h
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Deck.h
+string
+-
+vector
+-
+Card.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Card.h
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Hand.cpp
+Hand.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Hand.h
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Hand.h
+string
+-
+vector
+-
+Card.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Card.h
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/playWar.cpp
+iostream
+-
+Deck.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Deck.h
+Hand.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 10 (War)/Hand.h
+
