@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 9 (Evil Hangman)/EvilHangmanGame.cpp
+EvilHangmanGame.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 9 (Evil Hangman)/EvilHangmanGame.h
+fstream
+-
+iostream
+-
+set
+-
+map
+-
+string
+-
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 9 (Evil Hangman)/EvilHangmanGame.h
+set
+-
+string
+-
+
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 9 (Evil Hangman)/RunEvilHangman.cpp
+EvilHangmanGame.h
+C:/Users/Elvin/Desktop/EE 312 (Fall 2017)/Project 9 (Evil Hangman)/EvilHangmanGame.h
+iostream
+-
+sstream
+-
+set
+-
+string
+-
+
